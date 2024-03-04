@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of PCB Document [HoverGate-V2-pcb.PcbDoc]
+   Generated File[Bill of Materials-HoverGate-V2-pcb.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 5:37:57 PM On 2/1/2024
