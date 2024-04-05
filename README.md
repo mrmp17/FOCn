@@ -33,8 +33,9 @@ A SimpleFOC compatible medium-power BLDC driver module with WiFi and BT connecti
 
 Pin 1 is marked with an arrow near the connector.
 
-| 1 | VIN | Supply voltage positive |
+| Pin | Marking | Description |
 | --- | --- | --- |
+| 1 | VIN | Supply voltage positive |
 | 2 | GND | Supply voltage negative |
 | 3 | PHC | Motor phase C |
 | 4 | PHB | Motor phase B |
@@ -99,8 +100,10 @@ If prolonged high motor currents (>10A) and/or high ambient temperatures (>35deg
 
 ### MCU pin mapping
 
-| GDRV-INHA | IO12 | Phase A PWM |
+| Name | GPIO | Description |
 | --- | --- | --- |
+| USR-LED | IO46 | User LED (yellow) |
+| GDRV-INHA | IO12 | Phase A PWM |
 | GDRV-INHB | IO13 | Phase B PWM |
 | GDRV-INHC | IO14 | Phase C PWM |
 | SHUNT-AMP-OUT-A | IO4 | Phase A current analog signal |
