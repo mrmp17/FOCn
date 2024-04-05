@@ -373,7 +373,15 @@ DocumentPath=Project Outputs for Free Documents\Gerber\HoverGate-V2-pcb.REP
 DItemRevisionGUID=
 
 [GeneratedDocument35]
+DocumentPath=Project Outputs for HoverGate-V2\Gerber\HoverGate-V2-pcb.REP
+DItemRevisionGUID=
+
+[GeneratedDocument36]
 DocumentPath=Project Outputs for Free Documents\Pick Place\Pick Place for HoverGate-V2-pcb.csv
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for HoverGate-V2\Pick Place\Pick Place for HoverGate-V2-pcb.csv
 DItemRevisionGUID=
 
 [Configuration1]
