@@ -148,6 +148,7 @@ Example *PlatformIO* project is available in the *Examples* folder. It implement
 *FOCn* is used as a controller in my HoverGate project - an outdoor wing gate automated with hoverboard motors. 
 
 Demonstration video: https://www.youtube.com/watch?v=YPjKRgDzimE
+
 Code: https://github.com/mrmp17/HoverGate-V2-FW
 
 Each gate wing has a *FOCn* module driving a hoverboard motor that moves the gate. To synchronize the movements, both *FOCns* communicate via ESP-NOW protocol. One of the modules also connects to Wi-Fi and is accessible on Home Assistant via MQTT. There is also an RF receiver module connected to one module so that the gates can be opened by a keyfob remote. To lock the gate wings in place when closed, a magnetic door latch is connected to the *FOCn's* high voltage PWM output.
