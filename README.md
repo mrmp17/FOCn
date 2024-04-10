@@ -1,17 +1,17 @@
-# *FOCn*
+# FOCn - BLDC driver module
 
-A SimpleFOC compatible medium-power BLDC driver module with Wi-Fi and BT connectivity
+A *SimpleFOC* compatible medium-power BLDC driver module with Wi-Fi and Bluetooth connectivity
 ![FOCn photo](docs/assets/focn_2.jpeg)
 
 # Features
 
-- Fully compatible with SimpleFOC field-oriented control library for easy programing
+- Fully compatible with *SimpleFOC* field-oriented control library for easy programing
 - High input voltage, up to 45V (up to 10s lithium battery)
 - Up to 10A motor current without extra cooling
 - Robust low-side current sensing for torque-control applications
 - Supports hall sensors and encoders
 - Based on ESP32-S3 dual core MCU
-- built-in USB-C and Wi-Fi/BLE connectivity
+- Built-in USB-C and Wi-Fi / Bluetooth connectivity
 - High power PWM output for solenoids, latches, magnetic brakes
 - Power saving features for battery operation
 - Pluggable terminal block for easy and robust connections
@@ -22,14 +22,18 @@ A SimpleFOC compatible medium-power BLDC driver module with Wi-Fi and BT connect
 - Input current: 10A const., fuse protected
 - Phase current: 10A const., 25A peak (more possible with enhanced cooling)
 - Phase current measurement range: +-38A
-- HVP PWM output current: 5A average
-- HVP PWM load type: Supports inductive loads (flyback diode protection)
+- PWM output current: 5A average
+- PWM load type: Supports inductive loads (flyback diode protection)
 - Hall/encoder supply voltage: 5V
-- Allowable external load on 5V supply: 300mA“
+- Allowable external load on 5V supply: 300mA
 - Idle current consumption (motor driver disabled, MCU seep sleep): <200uA
+
+![Dimensions](docs/assets/focn_dims.png)
 
 # Where to get
 *FOCn* is available on Tindie store.
+
+<a href="https://www.tindie.com/products/plab/focn-bldc-driver-module/?ref=offsite_badges&utm_source=sellers_nplan&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
 # Getting started
 
@@ -82,7 +86,7 @@ I2C encoders are also supported. Connect the data lines to AUX inputs.
 
 ### HVP output
 
-High-voltage PWM is a low-side switched output designed for auxilary loads such as solenoids, magnetic brakes, indicator lights and other auxilary loads at up to 5A average current. Voltage is unregulated (same as input voltage to FOCn). Output can be used safely with inductive loads.
+High-voltage PWM is a low-side switched output designed for auxilary loads such as solenoids, magnetic brakes, indicator lights and other auxilary loads at up to 5A average current. Voltage is unregulated (same as input voltage to *FOCn*). Output can be used safely with inductive loads.
 
 ### LPV output
 
