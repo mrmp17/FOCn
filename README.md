@@ -1,6 +1,6 @@
-# FOCn
+# *FOCn*
 
-A SimpleFOC compatible medium-power BLDC driver module with WiFi and BT connectivity
+A SimpleFOC compatible medium-power BLDC driver module with Wi-Fi and BT connectivity
 
 # Features
 
@@ -10,7 +10,7 @@ A SimpleFOC compatible medium-power BLDC driver module with WiFi and BT connecti
 - Robust low-side current sensing for torque-control applications
 - Supports hall sensors and encoders
 - Based on ESP32-S3 dual core MCU
-- built-in USB-C and WiFi/BLE connectivity
+- built-in USB-C and Wi-Fi/BLE connectivity
 - High power PWM output for solenoids, latches, magnetic brakes
 - Power saving features for battery operation
 - Pluggable terminal block for easy and robust connections
@@ -54,7 +54,7 @@ Pin 1 is marked with an arrow near the connector. Compatible wire thickness is A
 
 Pluggable screw terminal block part number: MAX MX15EDGKM-3.81-16P-GN01-Cu-Y-A
 
-## Powering FOCn
+## Powering *FOCn*
 
 Allowable input voltage is from 9V to 45V. Recomended cell count for lithium batteries is 3s to 10s, depending on your application. If using a power supply that is not a battery, carefully consider the effects of regenerative breaking. 
 
@@ -62,7 +62,7 @@ If your application requires high motor currents, consider adding an extra capac
 
 ### Programming
 
-FOCn can be programmed and debugged via the onboard USB-C which is connected to the ESP32’s native USB port. Programing should start automatically. If not, BOOT and RESET pushbuttons are available to control boot and programming. UART0 port is exposed on an unpopulated header.
+*FOCn* can be programmed and debugged via the onboard USB-C which is connected to the ESP32’s native USB port. Programing should start automatically. If not, BOOT and RESET pushbuttons are available to control boot and programming. UART0 port is exposed on an unpopulated header.
 
 ### Motor connection
 
@@ -90,15 +90,15 @@ Two auxilary inputs are available to be used with various sensors, safety switch
 
 ### RF keyfob receiver module
 
-Keyfob remote module can be added to FOCn. The unpopulated header (bottom left) is designed to accept a HCS-300 rolling code receiver module. Two digital signals are connected to the MCU (D1 and D2). (module available here: https://www.parallax.com/product/key-fob-remote-and-receiver-pcb/)
+Keyfob remote module can be added to *FOCn*. The unpopulated header (bottom left) is designed to accept a HCS-300 rolling code receiver module. Two digital signals are connected to the MCU (D1 and D2). (module available here: https://www.parallax.com/product/key-fob-remote-and-receiver-pcb/)
 
-### Wireless communication (WiFi / BT)
+### Wireless communication (Wi-Fi / BT)
 
-The ESP32-S3 module has a built-in WiFi and BLE modem which can be used to communicate with and control FOCn. ESP32-S3 also supports Espressif’s ESP-NOW protocol which is very suitable for BLDC control due to low latency and processing overhead. If possible, run communication and BLDC driver code on sepparate CPU cores.
+The ESP32-S3 module has a built-in Wi-Fi and BLE modem which can be used to communicate with and control *FOCn*. ESP32-S3 also supports Espressif’s ESP-NOW protocol which is very suitable for BLDC control due to low latency and processing overhead. If possible, run communication and BLDC driver code on sepparate CPU cores.
 
 ### Adding extra cooling
 
-If prolonged high motor currents (>10A) and/or high ambient temperatures (>35degC) are expected, aditional cooling should be added. This can be done by attaching a heat-dissipating body to the back of FOCn with a thermal pad (most heat is produced below the MOSFETs) or forced air cooling (fan)
+If prolonged high motor currents (>10A) and/or high ambient temperatures (>35degC) are expected, aditional cooling should be added. This can be done by attaching a heat-dissipating body to the back of *FOCn* with a thermal pad (most heat is produced below the MOSFETs) or forced air cooling (fan)
 
 ### MCU pin mapping
 
