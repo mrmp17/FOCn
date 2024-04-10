@@ -144,3 +144,15 @@ If prolonged high motor currents (>10A) and/or high ambient temperatures (>35deg
 ### Example project
 Example *PlatformIO* project is available in the *Examples* folder. It implements basic control of a hoverboard hub motor (with phase current control) and demonstrates basic usage of *FOCn*. As the motor control input, a standard RC PWM signal is used. When developing your own projects, it is recomended to use the *PlatformIO* board file used in the example project (*/boards/FOCn_board.json*).
 
+### Use case example
+*FOCn* is used as a controller in my HoverGate project - an outdoor wing gate automated with hoverboard motors. 
+
+Demonstration video: https://www.youtube.com/watch?v=YPjKRgDzimE
+Code: https://github.com/mrmp17/HoverGate-V2-FW
+
+Each gate wing has a *FOCn* module driving a hoverboard motor that moves the gate. To synchronize the movements, both *FOCns* communicate via ESP-NOW protocol. One of the modules also connects to Wi-Fi and is accessible on Home Assistant via MQTT. There is also an RF receiver module connected to one module so that the gates can be opened by a keyfob remote. To lock the gate wings in place when closed, a magnetic door latch is connected to the *FOCn's* high voltage PWM output.
+
+*todo: add picture*
+
+
+
