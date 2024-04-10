@@ -31,7 +31,7 @@ A SimpleFOC compatible medium-power BLDC driver module with WiFi and BT connecti
 
 ### Connector pinout
 
-Pin 1 is marked with an arrow near the connector.
+Pin 1 is marked with an arrow near the connector. Compatible wire thickness is AWG18 to AWG16 (0.5 to 1.5 mm<sup>2</sup>).
 
 | Pin | Marking | Description |
 | --- | --- | --- |
@@ -52,6 +52,8 @@ Pin 1 is marked with an arrow near the connector.
 | 15 | AIO1 | Auxilary digital input 1 |
 | 16 | AIO2 | Auxilary digital input 2 |
 
+Pluggable screw terminal block part number: MAX MX15EDGKM-3.81-16P-GN01-Cu-Y-A
+
 ## Powering FOCn
 
 Allowable input voltage is from 9V to 45V. Recomended cell count for lithium batteries is 3s to 10s, depending on your application. If using a power supply that is not a battery, carefully consider the effects of regenerative breaking. 
@@ -60,7 +62,7 @@ If your application requires high motor currents, consider adding an extra capac
 
 ### Programming
 
-FOCn can be programmed and debugged via the onboard USB-C which is connected to the ESP32’s native USB port. BOOT and RESET pushbuttons are available to control boot and programming. UART0 port is exposed on an unpopulated header.
+FOCn can be programmed and debugged via the onboard USB-C which is connected to the ESP32’s native USB port. Programing should start automatically. If not, BOOT and RESET pushbuttons are available to control boot and programming. UART0 port is exposed on an unpopulated header.
 
 ### Motor connection
 
@@ -130,3 +132,7 @@ If prolonged high motor currents (>10A) and/or high ambient temperatures (>35deg
 | TP-IO16 | IO16 | TP34 test point |
 | TP-IO17 | IO17 | TP29 test point |
 | TP-IO18 | IO18 | TP30 test point |
+
+### Example project
+Example *PlatformIO* project is available in the *Examples* folder. It implements basic control of a hoverboard hub motor (with phase current control) and demonstrates basic usage of *FOCn*. As the motor control input, a standard RC PWM signal is used. When developing your own projects, it is recomended to use the *PlatformIO* board file used in the example project (*/boards/FOCn_board.json*).
+
