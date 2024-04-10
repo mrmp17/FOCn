@@ -1,6 +1,7 @@
 # *FOCn*
 
 A SimpleFOC compatible medium-power BLDC driver module with Wi-Fi and BT connectivity
+![FOCn photo](docs/assets/focn_2.jpeg)
 
 # Features
 
@@ -26,6 +27,9 @@ A SimpleFOC compatible medium-power BLDC driver module with Wi-Fi and BT connect
 - Hall/encoder supply voltage: 5V
 - Allowable external load on 5V supply: 300mA“
 - Idle current consumption (motor driver disabled, MCU seep sleep): <200uA
+
+# Where to get
+*FOCn* is available on Tindie store.
 
 # Getting started
 
