@@ -101,23 +101,6 @@ void setup() {
   pinMode(drv_cal_pin, OUTPUT);
   pinMode(pullup_en_pin, OUTPUT);
 
-  pinMode(hvpwm_pin, OUTPUT);
-  pinMode(lvpwm_pin, OUTPUT);
-
-  while(1){
-    digitalWrite(hvpwm_pin, HIGH);
-    digitalWrite(lvpwm_pin, HIGH);
-    digitalWrite(usr_led_pin, HIGH);
-    Serial.println("HVPWM and LVPWM on");
-    delay(1000);
-    digitalWrite(hvpwm_pin, LOW);
-    digitalWrite(lvpwm_pin, LOW);
-    digitalWrite(usr_led_pin, LOW);
-    Serial.println("HVPWM and LVPWM off");
-    delay(1000);
-  }
-
-
 
   //enable hall pullups
   digitalWrite(pullup_en_pin, LOW);
