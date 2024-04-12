@@ -27,6 +27,7 @@ A *SimpleFOC* compatible medium-power BLDC driver module with Wi-Fi and Bluetoot
 - Hall/encoder supply voltage: 5V
 - Allowable external load on 5V supply: 300mA
 - Idle current consumption (motor driver disabled, MCU seep sleep): <200uA
+- Gate  driver with shunt amplifier: DRV8323
 
 ![Dimensions](docs/assets/focn_dims.png)
 
