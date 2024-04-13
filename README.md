@@ -109,6 +109,10 @@ The ESP32-S3 module has a built-in Wi-Fi and BLE modem which can be used to comm
 
 If prolonged high motor currents (>10A) and/or high ambient temperatures (>35degC) are expected, aditional cooling should be added. This can be done by attaching a heat-dissipating body to the back of *FOCn* with a thermal pad (most heat is produced below the MOSFETs) or forced air cooling (fan)
 
+### Using *FOCn* with smaller motors
+
+In some cases, current sensing resolution might become an issue with low phase currents on small motors, as *FOCn* is designed for higher currents. This can be mitigated by changing the shunt resistor amplifier gain. By jumping *J7*, the gain is set to 40 (20 is default), which doubles the resolution. Keep in mind that this reduces the current measurement range to half the default value. Make sure to also modify the gains in *SimpleFOC* config.
+
 ### MCU pin mapping
 
 | Name | GPIO | Description |
